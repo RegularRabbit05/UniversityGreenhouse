@@ -1,0 +1,35 @@
+Realizzare, con i componenti compresi nell kit un sistema di controllo automatico per una serra composto da:
+
+a) Un motore passo-passo con relativo driver per aprire e chiudere la serranda
+b) Un sensore di umidità/temperatura dht11/22
+c) Un foto resistore
+d) Una ventola con relativo driver
+
+Il sistema deve essere in grado di:
+1) Aprire la serranda durante il giorno, qualora la temperatura sia superiore a 10 gradi C e chiuderla durante la notte
+2) Accendere la ventola per introdurre umidità qualora questa scenda al di sotto del 50%, ad una velocità proporzionare alla differenza dal 50%
+
+Il sistema deve essere modulare ovvero prevedere almeno i seguenti moduli di elaborazione in background:
+1) lettura periodica (attivata da INT del clock) della temperatura esterna dal DHT11
+2) Gestione del motore passo-passo tramite interrupt e comunicazione comandi/esiti tramite variabili globali.
+3) Inserimento parametri relativi agli algoritmi di gestione tramite console seriale.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Create, with the components included in the kit, an automatic control system for a greenhouse consisting of:
+
+a) A stepper motor with its driver to open and close the shutter
+b) A humidity/temperature sensor dht11/22
+c) A photoresistor
+d) A fan with its driver
+
+The system must be able to:
+1) Open the shutter during the day, if the temperature is above 10 degrees C and close it during the night
+2) Turn on the fan to introduce humidity if it drops below 50%, at a speed proportional to the difference from 50%
+
+The system must be modular, i.e. include at least the following background processing modules:
+1) periodic reading (activated by INT of the clock) of the external temperature from the DHT11
+2) Management of the stepper motor via interrupt and communication of commands/results via global variables.
+3) Insertion of parameters relating to the management algorithms via serial console.
