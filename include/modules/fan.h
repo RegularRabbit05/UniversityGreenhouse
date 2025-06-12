@@ -18,6 +18,3 @@ const ModuleInfo STRUCT_MODULES_FAN = {
     setPortPinD(&HWD_PORT_D, HWD_PIN_4, HWD_PIN_LOW);       \
 }
 
-void SPEED_FAN() {
-
-}
